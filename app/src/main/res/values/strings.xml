@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Examen Prático</string>
+
+    <!-- Strings para la actividad principal -->
+    <string name="examen_base">Examen Base</string>
+    <string name="examen_rest">Examen Servicios REST</string>
+
+    <!-- Strings para la actividad Examen Base -->
+    <string name="titulo">Ingresa tus datos</string>
+    <string name="ingresa_nombre">Introduce tu nombre</string>
+    <string name="mayor_edad">Mayor de edad</string>
+    <string name="menor_edad">Menor de edad</string>
+    <string name="limpiar_datos">Limpiar datos</string>
+    <string name="generar_reporta">Generar reporte</string>
+
+    <!--String para la alerta de creación de reporte -->
+    <string name="nombre">Nombre: </string>
+    <string name="edad">Edad: </string>
+    <string name="nss">Tu número de seguro social: </string>
+    <string name="sexo">Sexo: </string>
+    <string name="altura">Altura: </string>
+    <string name="peso">Peso: </string>
+    <string name="estado_peso">Tu estado: </string>
+    <string name="reporte">Reporte</string>
+    <string name="peso_ideal">Estás en tu peso ideal</string>
+    <string name="sobrepero">Tienes sobrepeso</string>
+    <string name="debajo_peso">Estás por debajo de tu peso ideal</string>
+    <string name="guardar">Guardar Reporte</string>
+    <string name="descartar">Descartar Reporte</string>
+
+
+</resources>
