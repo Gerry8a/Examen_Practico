@@ -90,7 +90,7 @@ public class ActividadGet extends AppCompatActivity {
     private void inicializarComponentes() {
         listView = findViewById(R.id.getListView);
         requestQueue = Volley.newRequestQueue(getApplicationContext());
-        url = "http://187.188.122.85:8091/NutriNET/Cliente";
+        url = "https://newsapi.org/v2/top-headlines?country=mx&apiKey=2a5d404a474c4f50a62ac30dcf07a0ed";
     }
 
 

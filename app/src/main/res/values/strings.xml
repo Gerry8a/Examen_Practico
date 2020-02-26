@@ -36,6 +36,10 @@
     <string name="nombre_usuario">Nombre de usuario: </string>
     <string name="correo">Correo: </string>
     <string name="password">Contraseña: </string>
+    <string name="guardar_cliente">Agregar Cliente</string>
+    <string name="datos_cliente">Agregar datos del nuevo cliente</string>
+
+
 
 
 
