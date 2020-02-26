@@ -17,7 +17,7 @@
         app:layout_constraintTop_toBottomOf="@+id/adaptadorEstado" />
 
     <TextView
-        android:id="@+id/adaptadorNombre"
+        android:id="@+id/getNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -26,16 +26,16 @@
         app:layout_constraintStart_toEndOf="@+id/textView3" />
 
     <TextView
-        android:id="@+id/adaptadorEdad"
+        android:id="@+id/getApellidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/adaptadorNombre" />
+        app:layout_constraintTop_toBottomOf="@+id/getNombre" />
 
     <TextView
-        android:id="@+id/adaptadorSexo"
+        android:id="@+id/getNombreUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
@@ -44,22 +44,22 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
-        android:id="@+id/adaptadorAltura"
+        android:id="@+id/getCorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="@string/altura"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/adaptadorSexo" />
+        app:layout_constraintTop_toBottomOf="@+id/getNombreUsuario" />
 
     <TextView
-        android:id="@+id/adaptadorPeso"
+        android:id="@+id/getPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:text="@string/peso"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/adaptadorAltura" />
+        app:layout_constraintTop_toBottomOf="@+id/getCorreo" />
 
     <TextView
         android:id="@+id/adaptadorEstado"
@@ -68,7 +68,7 @@
         android:layout_marginStart="5dp"
         android:text="@string/estado_peso"
         app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/adaptadorPeso" />
+        app:layout_constraintTop_toBottomOf="@+id/getPassword" />
 
     <TextView
         android:id="@+id/adaptadorNss"
@@ -112,7 +112,7 @@
         android:layout_height="wrap_content"
         android:text="@string/altura"
         app:layout_constraintStart_toStartOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/adaptadorSexo" />
+        app:layout_constraintTop_toBottomOf="@+id/getNombreUsuario" />
 
     <TextView
         android:id="@+id/textView7"
@@ -128,5 +128,5 @@
         android:layout_height="wrap_content"
         android:text="@string/estado_peso"
         app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/adaptadorPeso" />
+        app:layout_constraintTop_toBottomOf="@+id/getPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>

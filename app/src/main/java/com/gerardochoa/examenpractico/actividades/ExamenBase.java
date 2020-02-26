@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -87,11 +86,11 @@ public class ExamenBase extends AppCompatActivity implements RealmChangeListener
         builder.setView(view);
 
         //Inicializar componentes de la alerta
-        final TextView tvNombre = view.findViewById(R.id.adaptadorNombre);
-        final TextView tvEdad = view.findViewById(R.id.adaptadorEdad);
-        TextView tvSexo = view.findViewById(R.id.adaptadorSexo);
-        TextView tvAltura = view.findViewById(R.id.adaptadorAltura);
-        TextView tvPeso = view.findViewById(R.id.adaptadorPeso);
+        final TextView tvNombre = view.findViewById(R.id.getNombre);
+        final TextView tvEdad = view.findViewById(R.id.getApellidos);
+        TextView tvSexo = view.findViewById(R.id.getNombreUsuario);
+        TextView tvAltura = view.findViewById(R.id.getCorreo);
+        TextView tvPeso = view.findViewById(R.id.getPassword);
         TextView tvNss = view.findViewById(R.id.adaptadorNss);
         TextView tvEstado = view.findViewById(R.id.adaptadorEstado);
 

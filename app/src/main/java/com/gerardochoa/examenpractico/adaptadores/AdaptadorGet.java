@@ -8,17 +8,18 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.gerardochoa.examenpractico.R;
+import com.gerardochoa.examenpractico.modelos.Cliente;
 import com.gerardochoa.examenpractico.modelos.Persona;
 
 import java.util.List;
 
-public class AdaptadorPersona extends BaseAdapter {
+public class AdaptadorGet extends BaseAdapter {
 
     private Context context;
-    private List<Persona> list;
+    private List<Cliente> list;
     private int layout;
 
-    public AdaptadorPersona(Context context, List<Persona> list, int layout) {
+    public AdaptadorGet(Context context, List<Cliente> list, int layout) {
         this.context = context;
         this.list = list;
         this.layout = layout;
@@ -30,7 +31,7 @@ public class AdaptadorPersona extends BaseAdapter {
     }
 
     @Override
-    public Persona getItem(int position) {
+    public Cliente getItem(int position) {
         return list.get(position);
     }
 
@@ -45,35 +46,30 @@ public class AdaptadorPersona extends BaseAdapter {
 
         if(convertView == null){
             convertView = LayoutInflater.from(context).inflate(layout, null);
-            vh = new ViewHoder();
+            vh = new AdaptadorGet.ViewHoder();
             vh.nombre = convertView.findViewById(R.id.getNombre);
-            vh.edad = convertView.findViewById(R.id.getApellidos);
-            vh.nss = convertView.findViewById(R.id.adaptadorNss);
-            vh.sexo = convertView.findViewById(R.id.getNombreUsuario);
-            vh.peso = convertView.findViewById(R.id.getPassword);
-            vh.altura = convertView.findViewById(R.id.getCorreo);
-            vh.estado = convertView.findViewById(R.id.adaptadorEstado);
+            vh.apellidos = convertView.findViewById(R.id.getApellidos);
+            vh.nombreUsuario = convertView.findViewById(R.id.getNombreUsuario);
+            vh.correo = convertView.findViewById(R.id.getCorreo);
+            vh.password = convertView.findViewById(R.id.getPassword);
+
             convertView.setTag(vh);
         } else {
             vh = (ViewHoder) convertView.getTag();
         }
 
-        Persona persona  = list.get(position);
-        vh.nombre.setText(persona.getNombre());
-        vh.edad.setText(String.valueOf(persona.getEdad()));
-        vh.nss.setText(persona.getNSS());
-        vh.sexo.setText(persona.getSexo());
-        vh.peso.setText(String.valueOf(persona.getPeso()));
-        vh.altura.setText(String.valueOf(persona.getAltura()));
-        vh.estado.setText(persona.getEstado());
-
-
+        Cliente cliente = list.get(position);
+        vh.nombre.setText(cliente.getNombre());
+        vh.apellidos.setText(cliente.getApellidos());
+        vh.nombreUsuario.setText(cliente.getNombreUsuario());
+        vh.correo.setText(cliente.getCorreo());
+        vh.password.setText(cliente.getPassword());
 
         return convertView;
     }
 
     public class ViewHoder{
-        TextView nombre, edad, nss, sexo, peso, altura, estado;
+        TextView nombre, apellidos, correo, password, nombreUsuario;
 
     }
 }

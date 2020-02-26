@@ -28,5 +28,15 @@
     <string name="guardar">Guardar Reporte</string>
     <string name="descartar">Descartar Reporte</string>
 
+    <!--String para actividad ServiciosRest -->
+    <string name="post">Post</string>
+    <string name="get">Get</string>
+    <string name="put">Put</string>
+    <string name="apellido">Apellidos: </string>
+    <string name="nombre_usuario">Nombre de usuario: </string>
+    <string name="correo">Correo: </string>
+    <string name="password">Contraseña: </string>
+
+
 
 </resources>

@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         examRest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ExamenBase.class);
+                Intent intent = new Intent(getApplicationContext(), ServiciosRest.class);
                 startActivity(intent);
             }
         });
